@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --transparent-blue: rgba(56, 41, 224, .4);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --light-grey: rgb(255, 255, 255);
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Page Styles */
+body {
+  background-color: var(--very-pale-blue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* Order Component Styles */
+.order {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90%;
+  max-width: 420px;
+  background-color: var(--light-grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--pale-blue) 0px 7px 29px 0px;
+  margin: 20px;
+}
+.order h1 {
+  color: var(--dark-blue);
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.order p {
+  color: var(--desaturated-blue);
+  text-align: center;
+  width: 70%;
+  font-size: 16px;
+}
+.order__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.order__heroimg {
+  width: 100%;
+  object-fit: contain;
+}
+.order__plan {
+  background-color: var(--very-pale-blue);
+  width: 80%;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.order__plan__info {
+  margin-left: 20px;
+}
+.order__plan__selected {
+  font-size: 1rem;
+  color: var(--dark-blue);
+  margin: 5px 0px;
+}
+.order__plan__pricing {
+  margin: 0;
+}
+.order__plan__change {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+.order__plan__change:hover {
+  opacity: .7;
+  text-decoration: none;
+}
+/* Button Component Styles */
+.order__proceed {
+  background-color: var(--bright-blue);
+  box-shadow: var(--transparent-blue) 0 10px 20px 0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+  width: 80%;
+  z-index: 3;
+  margin: 10px 10px 20px 10px;
+  cursor: pointer;
+}
+.order__proceed:hover{
+  opacity: .7;
+}
+.order__cancel {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: .8rem;
+  margin: 10px;
+  cursor: pointer;
+}
+.order__cancel:hover {
+  color: var(--dark-blue);
+}
+
+/* Attribution */
+.attribution {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
